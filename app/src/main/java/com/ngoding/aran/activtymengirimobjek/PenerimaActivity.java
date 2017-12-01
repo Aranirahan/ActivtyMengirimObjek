@@ -14,10 +14,10 @@ public class PenerimaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_penerima);
         tvTampil = findViewById(R.id.tvData);
         Parcelable mParcelable = getIntent().getParcelableExtra(EXTRA_PENERIMA);
-        String dataTampil = "Data 1 (String)= "+mParcelable.getData1()+
-                "\nData 2 (String)= " +mParcelable.getData2()+
+
+        tvTampil.setText("Data 1 (String) = "+mParcelable.getData1()+
+                "\nData 2 (String) = " +mParcelable.getData2()+
                 "\nData 3 (int) = "+mParcelable.getData3()+
-                "\nData 4 (int = )"+mParcelable.getData4();
-        tvTampil.setText(dataTampil);
+                "\nData 4 (int) = "+mParcelable.getData4());
     }
 }
